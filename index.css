@@ -9,7 +9,7 @@ iframe html body,body,.hdDmAe, [class^="HomeContent"]{
     background-color: black !important;
 }
 h1,h2,h3,h4,h5,h6,span,p,[class^="EditorialPlacement__"],
-.profile_identity-alternate_names{
+.profile_identity-alternate_names, [data-lyrics-container="true"], *[class*='SongBioPreview'] a{
     color: white !important;
 }
 [class*="ChartItem"]:hover,
@@ -59,7 +59,7 @@ div[class^='ContributorSidebar'] a[class^='StyledLink'],
 a[class^='ContributorSidebar'],
 div[class^='ContributorSidebarAlbum'] li[class^='AlbumTracklist'] div[class^='AlbumTracklist'],
 div[class^='SongComments'],
-textarea[class^='TextInput']
+textarea[class^='TextInput'],  *[class*='SongBioPreview'] a, a[href='#about']
 {
         color: white !important;
     }
@@ -180,6 +180,9 @@ li[class^='search-choice'] span
 {
 color: black !important;
 }
+ *[class*='SongBioPreview'] a{
+    color: white !important;
+ }
 span[class="profile_tabs-tab-count"]{
     color: #ff1464 !important;
 }
