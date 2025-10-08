@@ -34,6 +34,24 @@ a[href="#primary-album"] span[class^='InlineSvg'] svg,
 div[class^="SongNav__UpArrow-sc"] span svg{
     fill: black !important;
 }
+div[class^="SocialLinks__Container"] a[class^="SocialLinks__"] svg path,
+div[class^='StubhubLink'] > svg > path{
+    fill: white !important;
+}
+div[id*="div-gpt-ad"], div[id*="ads"], div[class*='smartfeed']{
+    display: none !important;
+}
+div[class*='AuthenticationModal']{
+    color: white !important;
+    background-color: rgb(255, 255, 100);
+    background-image: linear-gradient(var(--backCon) 0%, var(--back) 39.9%);
+}
+div[class*='AuthenticationModal'] input{
+    color: white !important;
+}
+#lyrics-root div[data-exclude-from-selection='true']:has(div[id*="div-gpt-ad"]), #lyrics-root div[data-exclude-from-selection='true']:has(div[id*="ads"]){
+    height: 0vh;
+}
 div[class*='ContributorSidebarSection'] svg{
     fill: transparent !important;
 }
@@ -59,7 +77,8 @@ div[class^='ContributorSidebar'] a[class^='StyledLink'],
 a[class^='ContributorSidebar'],
 div[class^='ContributorSidebarAlbum'] li[class^='AlbumTracklist'] div[class^='AlbumTracklist'],
 div[class^='SongComments'],
-textarea[class^='TextInput'],  *[class*='SongBioPreview'] a, a[href='#about']
+textarea[class^='TextInput'],  *[class*='SongBioPreview'] a, a[href='#about'],
+div[class^="RecommendedSong__SongTitle"]
 {
         color: white !important;
     }
@@ -72,7 +91,7 @@ textarea[class^='TextInput'],  *[class*='SongBioPreview'] a, a[href='#about']
    div[class*="SelectInput__"],
   div[class^=" css"][class$="-control"] div  div[class^=" css-"][class$="placeholder"],
     div[class^=" css"][class$="-control"] div  div[class^=" css-"][class$="singleValue"]
- {
+    {
     background: var(--backCon) !important;
     color: white !important;
  }
@@ -107,7 +126,8 @@ label[for="request_issue_type_select"],
 ol li a[href^="/hc"],
 div[class*='RichText'] a,
 div[class^='LyricsEditExplainer'],
-div[class^='LyricsEditExplainer'] a[class^='StyledLink']{
+div[class^='LyricsEditExplainer'] a[class^='StyledLink'],
+*[class^='StubhubLink']{
     color: white !important;
 }
 div[class*="tooltip"],
@@ -138,6 +158,9 @@ span[class*='Highlight']{
 }span[class*='PTO'],
 a[class*='ReferentFragment']:hover{
     background-color: rgba(247, 244, 244, 0.6);
+}
+mini-article-card a{
+    background-color: transparent !important;
 }
  [class*="standalone"], 
  div.standalone_inbox,
@@ -176,8 +199,10 @@ div[class^='SongInfo__Credit'] div[class^='SongInfo__Label'],
 div[class^='SongInfo__Credit'] span[class^='PortalTooltip'] a,
 div[class^='SongHeader'] span[class^='PortalTooltip'] span[class^='PortalTooltip'] a[class^='StyledLink'],
 div[class^='MetadataStats'] span,
-li[class^='search-choice'] span
-{
+li[class^='search-choice'] span,
+div[class="PageHeaderAuthLinks"] a[href='/login'] span[font-weight="normal"][class^='TextLabel'],
+div[class^='PageHeader'] div > a[href='/login'] > span,
+div[class^='PageHeader'] div > a[href='/signup'] > span{
 color: black !important;
 }
  *[class*='SongBioPreview'] a{

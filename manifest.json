@@ -5,7 +5,7 @@
   "description": "A dark mode genius for dark mode appreciators",
   "permissions": ["tabs", "scripting"],
   "host_permissions": [
-    "https://genius.com/*",
+    "*://*.genius.com/*",
     "https://support.genius.com/*",
     "https://musiciq.genius.com/*"
   ],
