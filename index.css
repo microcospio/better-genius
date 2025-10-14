@@ -23,7 +23,9 @@ iframe html body,a[class*="ChartItem"] div[class*="ChartItem"],
 label[id^="request_custom"]{
 color: white;
 }
-svg,  div[class^='ContributorSidebar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg{
+svg,
+  div[class^='ContributorSidebar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg
+  ,div[class^='ContributorsCredit'] span[class^='RoleIcon'] svg{
     fill: white !important;
 }
 [class*="PageHeader"] svg, [class^="global_search-submit_button"] svg,
@@ -127,7 +129,9 @@ ol li a[href^="/hc"],
 div[class*='RichText'] a,
 div[class^='LyricsEditExplainer'],
 div[class^='LyricsEditExplainer'] a[class^='StyledLink'],
-*[class^='StubhubLink']{
+*[class^='StubhubLink'],
+div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div a,
+div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div span{
     color: white !important;
 }
 div[class*="tooltip"],
@@ -169,7 +173,8 @@ mini-article-card a{
   .statistics_panel,  
   [class*="leaderboard-row"],
   form[class*='conversation'],
-  div[class^='Alert'][class*='Container'][role='alert']
+  div[class^='Alert'][class*='Container'][role='alert'],
+  div[class^='AnnotationEditHistory']
   {
     background: var(--back) !important;
     color: white !important;
@@ -202,10 +207,14 @@ div[class^='MetadataStats'] span,
 li[class^='search-choice'] span,
 div[class="PageHeaderAuthLinks"] a[href='/login'] span[font-weight="normal"][class^='TextLabel'],
 div[class^='PageHeader'] div > a[href='/login'] > span,
-div[class^='PageHeader'] div > a[href='/signup'] > span{
+div[class^='PageHeader'] div > a[href='/signup'] > span,
+li[class^='ContributorList'] span{
 color: black !important;
 }
- *[class*='SongBioPreview'] a{
+ *[class*='SongBioPreview'] a,
+div div[class^='Attribution__Author'],
+div[class^='ContributorsCredit'],
+div[class^='SongInfo__Label']{
     color: white !important;
  }
 span[class="profile_tabs-tab-count"]{
