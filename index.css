@@ -148,8 +148,10 @@ div[class*="tooltip"],
   div[class*='alert'],div[class*='user_notification'],
   textarea[class*='TextInput'],
   iq-notification-list div[class='iq_notification_list'] *[class*='iq_notification_list'],
-  div[class^='iq_notification-action'], div[class^='iq_notification_list'],
- div[class^='iq_notification-message'], div[class^='iq_notification']
+  div[class^='iq_notification-action'], div[class^='iq_notification_list']
+ ,div[class^='iq_notification-message'] ,div[class^='iq_notification']
+ div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] div
+ ,div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] span
   {
      background-color: var(--back) !important;
     color: white !important;
@@ -174,12 +176,18 @@ mini-article-card a{
   [class*="leaderboard-row"],
   form[class*='conversation'],
   div[class^='Alert'][class*='Container'][role='alert'],
-  div[class^='AnnotationEditHistory']
+  div[class^='AnnotationEditHistory'],
+  div.activity_stream_event_unit,
+ div[class*='fp'][class*='scope'],
+ div[class^='grid_layout'], div[class*='article_info'],
+ .render_404
   {
     background: var(--back) !important;
     color: white !important;
  }
-
+.render_404-image{
+    filter: invert(93%);
+}
  .contribution_opportunity{
      background: #000000 !important;
     box-shadow: 0 2px 3px 0 #000000 !important;
@@ -209,14 +217,35 @@ div[class="PageHeaderAuthLinks"] a[href='/login'] span[font-weight="normal"][cla
 div[class^='PageHeader'] div > a[href='/login'] > span,
 div[class^='PageHeader'] div > a[href='/signup'] > span,
 li[class^='ContributorList'] span{
-color: black !important;
+    color: black !important;
+}
+.article_rich_text_formatting .g_list-item-content-body>a:not(:hover), .article_rich_text_formatting .g_list-item-header-title>a:not(:hover), .article_rich_text_formatting em>a:not(:hover), .article_rich_text_formatting h1>a:not(:hover), .article_rich_text_formatting h2>a:not(:hover), .article_rich_text_formatting h3>a:not(:hover), .article_rich_text_formatting h4>a:not(:hover), .article_rich_text_formatting h5>a:not(:hover), .article_rich_text_formatting h6>a:not(:hover), .article_rich_text_formatting li>a:not(:hover), .article_rich_text_formatting p>a:not(:hover), .article_rich_text_formatting small>a:not(:hover), .article_rich_text_formatting strong>a:not(:hover)
+,.article_reference_link{
+    background: none !important;
+    background-size: calc(100% - 1px) 1px;
+   text-shadow: none !important;
+   color: white !important;
+}
+.article_rich_text_formatting .g_list-item-content-body>a, .article_rich_text_formatting .g_list-item-header-title>a, .article_rich_text_formatting em>a, .article_rich_text_formatting h1>a, .article_rich_text_formatting h2>a, .article_rich_text_formatting h3>a, .article_rich_text_formatting h4>a, .article_rich_text_formatting h5>a, .article_rich_text_formatting h6>a, .article_rich_text_formatting li>a, .article_rich_text_formatting p>a, .article_rich_text_formatting small>a, .article_rich_text_formatting strong>a
+,.article_reference_link:hover
+{
+    color: grey !important;
 }
  *[class*='SongBioPreview'] a,
 div div[class^='Attribution__Author'],
 div[class^='ContributorsCredit'],
-div[class^='SongInfo__Label']{
+div[class^='SongInfo__Label'],
+div[class^="toggleable_list_item"][class*="selected"],
+div:nth-child(1) > standard-rich-content > div > center > strong{
     color: white !important;
  }
+ 
+div[class^="toggleable_list_item"]{
+    color: grey;
+}
+a[class^="StyledLink"][class*="StickyNav"] span[class^="TextLabel"]{
+color: black !important;
+}
 span[class="profile_tabs-tab-count"]{
     color: #ff1464 !important;
 }

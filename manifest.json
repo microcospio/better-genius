@@ -1,19 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Better Genius",
-  "version": "1.0",
+  "version": "1.1",
   "description": "A dark mode genius for dark mode appreciators",
   "permissions": ["tabs", "scripting"],
   "host_permissions": [
     "*://*.genius.com/*",
     "https://support.genius.com/*",
-    "https://musiciq.genius.com/*"
+    "https://musiciq.genius.com/*",
+    "https://dialog.filepicker.io/*"
   ],
   "content_scripts": [
     {
       "matches": ["https://genius.com/*"],
       "css": ["index.css"],
-      "all_frames": true
+      "all_frames": true,
+      "match_about_blank": true
     }
   ],
   "background": {
