@@ -131,7 +131,13 @@ div[class^='LyricsEditExplainer'],
 div[class^='LyricsEditExplainer'] a[class^='StyledLink'],
 *[class^='StubhubLink'],
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div a,
-div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div span{
+div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div span,
+div[class^="chart_row-metadata"],
+
+
+
+div[class^='LyricsPlaceholder']
+{
     color: white !important;
 }
 div[class*="tooltip"],
@@ -180,7 +186,11 @@ mini-article-card a{
   div.activity_stream_event_unit,
  div[class*='fp'][class*='scope'],
  div[class^='grid_layout'], div[class*='article_info'],
- .render_404
+ .render_404,
+body > div.header > iq-notification-list > div > div:nth-child(1) > div > div.iq_notification-message > span > em,
+ body > div.header > iq-notification-list > div > div > div,
+body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em,
+body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em
   {
     background: var(--back) !important;
     color: white !important;
