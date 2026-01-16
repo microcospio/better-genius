@@ -190,7 +190,8 @@ mini-article-card a{
 body > div.header > iq-notification-list > div > div:nth-child(1) > div > div.iq_notification-message > span > em,
  body > div.header > iq-notification-list > div > div > div,
 body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em,
-body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em
+body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em,
+div[class^="RecentActivity"]
   {
     background: var(--back) !important;
     color: white !important;
