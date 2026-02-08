@@ -247,8 +247,9 @@ div div[class^='Attribution__Author'],
 div[class^='ContributorsCredit'],
 div[class^='SongInfo__Label'],
 div[class^="toggleable_list_item"][class*="selected"],
-div:nth-child(1) > standard-rich-content > div > center > strong{
-    color: white !important;
+div:nth-child(1) > standard-rich-content > div > center > strong
+{
+        color: white !important;
  }
  
 div[class^="toggleable_list_item"]{
@@ -288,3 +289,6 @@ textarea:disabled{
 background-color: rgb(255, 255, 255) !important;
 color: rgb(0, 0, 0) !important;
 }
+ li div span[class^="InlineUserBadge__Name"], ol li[class^="ContributorList"] span[class="ContributorList__AttributionValue"]{
+    color: white !important;
+ }
