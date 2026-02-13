@@ -8,6 +8,9 @@ iframe html body,body,.hdDmAe, [class^="HomeContent"]{
 .fyuwSb{
     background-color: black !important;
 }
+div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"]{
+    border-color: white !important;
+}
 h1,h2,h3,h4,h5,h6,span,p,[class^="EditorialPlacement__"],
 .profile_identity-alternate_names, [data-lyrics-container="true"], *[class*='SongBioPreview'] a{
     color: white !important;
@@ -48,7 +51,7 @@ div[class*='AuthenticationModal']{
     background-color: rgb(255, 255, 100);
     background-image: linear-gradient(var(--backCon) 0%, var(--back) 39.9%);
 }
-div[class*='AuthenticationModal'] input{
+div[class*='AuthenticationModal'] input, div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"]{
     color: white !important;
 }
 #lyrics-root div[data-exclude-from-selection='true']:has(div[id*="div-gpt-ad"]), #lyrics-root div[data-exclude-from-selection='true']:has(div[id*="ads"]){
