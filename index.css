@@ -157,7 +157,8 @@ div[class*="tooltip"],
   div[class^='iq_notification-action'], div[class^='iq_notification_list']
  ,div[class^='iq_notification-message'] ,div[class^='iq_notification']
  div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] div
- ,div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] span
+ ,div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] span,
+  div[data-testid*="sticky-contributor-toolbar"]
   {
      background-color: var(--back) !important;
     color: white !important;
@@ -247,7 +248,8 @@ div div[class^='Attribution__Author'],
 div[class^='ContributorsCredit'],
 div[class^='SongInfo__Label'],
 div[class^="toggleable_list_item"][class*="selected"],
-div:nth-child(1) > standard-rich-content > div > center > strong
+div:nth-child(1) > standard-rich-content > div > center > strong,
+label[class^="Field-shared"]
 {
         color: white !important;
  }
@@ -289,6 +291,6 @@ textarea:disabled{
 background-color: rgb(255, 255, 255) !important;
 color: rgb(0, 0, 0) !important;
 }
- li div span[class^="InlineUserBadge__Name"], ol li[class^="ContributorList"] span[class="ContributorList__AttributionValue"]{
+ li div span[class^="InlineUserBadge__Name"], ol li[class^="ContributorList"] span[class="ContributorList__AttributionValue"], div[class^='SectionTitle__Title'],div[pseudo^="-webkit-input-placeholder"]{
     color: white !important;
  }
