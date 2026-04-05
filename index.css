@@ -148,7 +148,8 @@ div[class^='LyricsEditExplainer'] a[class^='StyledLink'],
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div a,
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div span,
 div[class^="chart_row-metadata"],
-div[class^='LyricsPlaceholder'],blockquote
+div[class^='LyricsPlaceholder'],blockquote,
+div[class^="profile_achievements"]
 {
     color: white !important;
 }
