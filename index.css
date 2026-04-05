@@ -8,7 +8,7 @@ iframe html body,body,.hdDmAe, [class^="HomeContent"]{
 .fyuwSb{
     background-color: black !important;
 }
-div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"]{
+div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"], li[class="blocks-item"]{
     border-color: white !important;
 }
 h1,h2,h3,h4,h5,h6,span,p,[class^="EditorialPlacement__"],
@@ -26,10 +26,11 @@ iframe html body,a[class*="ChartItem"] div[class*="ChartItem"],
 label[id^="request_custom"]{
 color: white;
 }
-svg,
-  div[class^='ContributorSidebar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg
+
+   svg,div[class^='ContributorSidebsar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg
   ,div[class^='ContributorsCredit'] span[class^='RoleIcon'] svg{
     fill: white !important;
+    
 }
 [class*="PageHeader"] svg, [class^="global_search-submit_button"] svg,
 a[class^='MetadataQuestionTemplate'] svg,
@@ -46,7 +47,7 @@ div[class^='StubhubLink'] > svg > path{
 div[id*="div-gpt-ad"], div[id*="ads"], div[class*='smartfeed']{
     display: none !important;
 }
-div[class*='AuthenticationModal']{
+div[class*='AuthenticationModal'], header[class="header"]:has(div.logo){
     color: white !important;
     background-color: rgb(255, 255, 100);
     background-image: linear-gradient(var(--backCon) 0%, var(--back) 39.9%);
@@ -61,7 +62,7 @@ div[class*='ContributorSidebarSection'] svg{
     fill: transparent !important;
 }
 div[class^="SquareSelect"],[class*="PageHeaderDropdownMenu-sc"],
-textarea[class^='TextInput']{
+textarea[class^='TextInput'], div[class^="LineItemList__Container"]{
     background-color: var(--back) !important;
 
 }
