@@ -23,7 +23,7 @@ background: black !important;
 }
 
 iframe html body,a[class*="ChartItem"] div[class*="ChartItem"],
-label[id^="request_custom"]{
+label[id^="request_custom"], time{
 color: white;
 }
 
@@ -41,7 +41,10 @@ div[class^="SongNav__UpArrow-sc"] span svg{
     fill: black !important;
 }
 div[class^="SocialLinks__Container"] a[class^="SocialLinks__"] svg path,
-div[class^='StubhubLink'] > svg > path{
+div[class^='StubhubLink'] > svg > path,
+div[class^="LineItemList__Container"] * svg[class^="LineItemActionIcon__Icon"],
+div[class^="LineItemList"] div > div[class^="LineItem__ItemRow"] * svg,
+div[class^="LineItemDetail__Container"] * svg{
     fill: white !important;
 }
 div[id*="div-gpt-ad"], div[id*="ads"], div[class*='smartfeed']{
@@ -62,10 +65,18 @@ div[class*='ContributorSidebarSection'] svg{
     fill: transparent !important;
 }
 div[class^="SquareSelect"],[class*="PageHeaderDropdownMenu-sc"],
-textarea[class^='TextInput'], div[class^="LineItemList__Container"]{
+textarea[class^='TextInput'], div[class^="LineItemList__Container"],
+div[class^="LineItemList"] div > div[class^="LineItem__ItemRow"],
+div[class^="LineItemDetail__Container"],
+ div[class^="DetailSection-shared"],
+ a[class^="MiniCard__Link"].eIobYB {
     background-color: var(--back) !important;
 
 }
+ a[class^="MiniCard__Link"].eIobYB{
+   border: 0.5rem solid #05050575;
+   border-radius: 5px;
+ }
 .inbox_line_item_detail {
     background:var(--back) !important; 
     padding: 0 1rem 1rem;
@@ -137,10 +148,7 @@ div[class^='LyricsEditExplainer'] a[class^='StyledLink'],
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div a,
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div span,
 div[class^="chart_row-metadata"],
-
-
-
-div[class^='LyricsPlaceholder']
+div[class^='LyricsPlaceholder'],blockquote
 {
     color: white !important;
 }
@@ -162,7 +170,11 @@ div[class*="tooltip"],
  ,div[class^='iq_notification-message'] ,div[class^='iq_notification']
  div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] div
  ,div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] span,
-  div[data-testid*="sticky-contributor-toolbar"]
+
+  div[data-testid*="sticky-contributor-toolbar"],
+   div[class^="TooltipShadow"],
+    div[class^="MetadataChangesSection"],
+    div[class^="Referent__Fragment"], a[class^="Referent__Fragment"]
   {
      background-color: var(--back) !important;
     color: white !important;
