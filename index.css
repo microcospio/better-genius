@@ -8,7 +8,8 @@ iframe html body,body,.hdDmAe, [class^="HomeContent"]{
 .fyuwSb{
     background-color: black !important;
 }
-div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"], li[class="blocks-item"]{
+div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"], li[class="blocks-item"],
+form[class^="CommentForm"] label div textarea{
     border-color: white !important;
 }
 h1,h2,h3,h4,h5,h6,span,p,[class^="EditorialPlacement__"],
@@ -56,7 +57,7 @@ div[class*='AuthenticationModal'], header[class="header"]:has(div.logo){
     background-color: rgb(255, 255, 100);
     background-image: linear-gradient(var(--backCon) 0%, var(--back) 39.9%);
 }
-div[class*='AuthenticationModal'] input, div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"]{
+div[class*='AuthenticationModal'] input, div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"], form[class^="CommentForm"] label div textarea::placeholder{
     color: white !important;
 }
 #lyrics-root div[data-exclude-from-selection='true']:has(div[id*="div-gpt-ad"]), #lyrics-root div[data-exclude-from-selection='true']:has(div[id*="ads"]){
@@ -268,7 +269,8 @@ div[class^='ContributorsCredit'],
 div[class^='SongInfo__Label'],
 div[class^="toggleable_list_item"][class*="selected"],
 div:nth-child(1) > standard-rich-content > div > center > strong,
-label[class^="Field-shared"]
+label[class^="Field-shared"],
+div[class^="BaseAnnotation"] div[class^='RichText'] *
 {
         color: white !important;
  }
