@@ -37,7 +37,8 @@ a[class^='MetadataQuestionTemplate'] svg,
 div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg,
 div[class^='MetadataStats'] span div svg,
 a[href="#primary-album"] span[class^='InlineSvg'] svg,
-div[class^="SongNav__UpArrow-sc"] span svg{
+div[class^="SongNav__UpArrow-sc"] span svg,
+div[class^="SiteCommandPaletteItem"][class*="Icon"] svg{
     fill: black !important;
 }
 div[class^="SocialLinks__Container"] a[class^="SocialLinks__"] svg path,
@@ -245,7 +246,8 @@ li[class^='search-choice'] span,
 div[class="PageHeaderAuthLinks"] a[href='/login'] span[font-weight="normal"][class^='TextLabel'],
 div[class^='PageHeader'] div > a[href='/login'] > span,
 div[class^='PageHeader'] div > a[href='/signup'] > span,
-li[class^='ContributorList'] span{
+li[class^='ContributorList'] span,
+span[class^='SiteCommandPaletteItem']{
     color: black !important;
 }
 .article_rich_text_formatting .g_list-item-content-body>a:not(:hover), .article_rich_text_formatting .g_list-item-header-title>a:not(:hover), .article_rich_text_formatting em>a:not(:hover), .article_rich_text_formatting h1>a:not(:hover), .article_rich_text_formatting h2>a:not(:hover), .article_rich_text_formatting h3>a:not(:hover), .article_rich_text_formatting h4>a:not(:hover), .article_rich_text_formatting h5>a:not(:hover), .article_rich_text_formatting h6>a:not(:hover), .article_rich_text_formatting li>a:not(:hover), .article_rich_text_formatting p>a:not(:hover), .article_rich_text_formatting small>a:not(:hover), .article_rich_text_formatting strong>a:not(:hover)
