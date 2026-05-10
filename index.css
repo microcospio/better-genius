@@ -73,7 +73,10 @@ div[class*='article_info'],
 body > div.header > iq-notification-list > div > div:nth-child(1) > div > div.iq_notification-message > span > em,
 body > div.header > iq-notification-list > div > div > div,
 body > div.header > iq-notification-list > div > div > div > div.iq_notification-message > span > em,
-div[class^="RecentActivity"] {
+div[class^="RecentActivity"],
+div[class^="TagInputMultiComponents"][role="button"] div,
+div[class^="TagInputMultiComponents"] div div,
+div[role="option"]{
     background-color: var(--back) !important;
     color: white !important;
 }
@@ -147,7 +150,10 @@ div[class^="BaseAnnotation"] div[class^='RichText'] *,
 li div span[class^="InlineUserBadge__Name"],
 ol li[class^="ContributorList"] span[class="ContributorList__AttributionValue"],
 div[class^='SectionTitle__Title'],
-div[pseudo^="-webkit-input-placeholder"] {
+div[pseudo^="-webkit-input-placeholder"],
+legend,
+div[class$="singleValue"],
+div[class$="control"] div[data-value]{
     color: white !important;
 }
 
@@ -311,6 +317,10 @@ textarea:disabled {
     color: rgb(0, 0, 0) !important;
 }
 
+input[role="combobox"]{
+    min-width: 0 !important;
+    grid-area: initial !important;
+}
 .article_rich_text_formatting :is(.g_list-item-content-body, .g_list-item-header-title, em, h1, h2, h3, h4, h5, h6, li, p, small, strong) > a:not(:hover),
 .article_reference_link {
     background: none !important;
