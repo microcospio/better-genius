@@ -1,95 +1,114 @@
 :root{
-    --back:  rgb(18, 18, 18);
+    --back: rgb(18, 18, 18);
     --backCon: rgb(6, 6, 6);
 }
-iframe html body,body,.hdDmAe, [class^="HomeContent"]{
+
+iframe html body,
+body,
+.hdDmAe,
+[class^="HomeContent"],
+div[class^="SquareSelect"],
+[class*="PageHeaderDropdownMenu-sc"],
+textarea[class^='TextInput'],
+div[class^="LineItemList__Container"],
+div[class^="LineItemList"] div > div[class^="LineItem__ItemRow"],
+div[class^="LineItemDetail__Container"],
+div[class^="DetailSection-shared"],
+a[class^="MiniCard__Link"].eIobYB,
+div[class^='FirehoseStream'] div div[role='button'] {
     background-color: var(--back) !important;
 }
-.fyuwSb{
+
+.fyuwSb {
     background-color: black !important;
 }
-div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"], li[class="blocks-item"],
-form[class^="CommentForm"] label div textarea{
-    border-color: white !important;
-}
-h1,h2,h3,h4,h5,h6,span,p,[class^="EditorialPlacement__"],
-.profile_identity-alternate_names, [data-lyrics-container="true"], *[class*='SongBioPreview'] a{
-    color: white !important;
-}
+
 [class*="ChartItem"]:hover,
 a[class*="PageGrid"]:hover,
 .vertical_album_card:hover,
-mini-song-card a[class='mini_card']:hover{
-background: black !important;
+mini-song-card a[class='mini_card']:hover {
+    background-color: black !important;
 }
 
-iframe html body,a[class*="ChartItem"] div[class*="ChartItem"],
-label[id^="request_custom"], time{
-color: white;
-}
-
-   svg,div[class^='ContributorSidebsar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg
-  ,div[class^='ContributorsCredit'] span[class^='RoleIcon'] svg{
-    fill: white !important;
-    
-}
-[class*="PageHeader"] svg, [class^="global_search-submit_button"] svg,
-a[class^='MetadataQuestionTemplate'] svg,
-div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg,
-div[class^='MetadataStats'] span div svg,
-a[href="#primary-album"] span[class^='InlineSvg'] svg,
-div[class^="SongNav__UpArrow-sc"] span svg,
-div[class^="SiteCommandPaletteItem"][class*="Icon"] svg{
-    fill: black !important;
-}
-div[class^="SocialLinks__Container"] a[class^="SocialLinks__"] svg path,
-div[class^='StubhubLink'] > svg > path,
-div[class^="LineItemList__Container"] * svg[class^="LineItemActionIcon__Icon"],
-div[class^="LineItemList"] div > div[class^="LineItem__ItemRow"] * svg,
-div[class^="LineItemDetail__Container"] * svg{
-    fill: white !important;
-}
-div[id*="div-gpt-ad"], div[id*="ads"], div[class*='smartfeed']{
-    display: none !important;
-}
-div[class*='AuthenticationModal'], header[class="header"]:has(div.logo){
+div[class*="tooltip"],
+div[class*="full_width_button u-clickable"],
+a[class*="full_width_link"],
+a[class="nesty-input"],
+select[id^="request_issue_type_select"],
+a[class*="mini_card"],
+div[class^='modal_window-content'],
+div[class*='ScrollableTabs__'],
+div[class*="RepeatableInputPair__"],
+div[class^="css-"][class$="-menu"],
+div[class^=" css"][class$="-menu"] div div[class^=" css"],
+div[class*='alert'],
+div[class*='user_notification'],
+textarea[class*='TextInput'],
+iq-notification-list div[class='iq_notification_list'] *[class*='iq_notification_list'],
+div[class^='iq_notification-action'],
+div[class^='iq_notification_list'],
+div[class^='iq_notification-message'],
+div[class^='iq_notification'],
+div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] div,
+div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] span,
+div[data-testid*="sticky-contributor-toolbar"],
+div[class^="TooltipShadow"],
+div[class^="MetadataChangesSection"],
+div[class^="Referent__Fragment"],
+a[class^="Referent__Fragment"],
+[class*="standalone"],
+div.standalone_inbox,
+.profile_contribution,
+.white_container,
+.statistics_panel,
+[class*="leaderboard-row"],
+form[class*='conversation'],
+div[class^='Alert'][class*='Container'][role='alert'],
+div[class^='AnnotationEditHistory'],
+div.activity_stream_event_unit,
+div[class*='fp'][class*='scope'],
+div[class^='grid_layout'],
+div[class*='article_info'],
+.render_404,
+body > div.header > iq-notification-list > div > div:nth-child(1) > div > div.iq_notification-message > span > em,
+body > div.header > iq-notification-list > div > div > div,
+body > div.header > iq-notification-list > div > div > div > div.iq_notification-message > span > em,
+div[class^="RecentActivity"] {
+    background-color: var(--back) !important;
     color: white !important;
-    background-color: rgb(255, 255, 100);
-    background-image: linear-gradient(var(--backCon) 0%, var(--back) 39.9%);
 }
+
+.referent,
+[class*="feed_dropdown"],
+.feed_dropdown-expanded_section,
+.contribution_opportunity-content,
+.contribution_opportunity-actions,
+div[class*="TagInput__"],
+div[class*='ScrollableTabs__'] input,
+div[class*="css"] div[class*="TagInput__"] div[class*="css"],
+div[class*="SelectInput__"],
+div[class^=" css"][class$="-control"] div div[class^=" css-"][class$="placeholder"],
+div[class^=" css"][class$="-control"] div div[class^=" css-"][class$="singleValue"] {
+    background-color: var(--backCon) !important;
+    color: white !important;
+}
+
+div[class^="SquareManySelect"],
+div[class*="StickyContributorToolbar__Container-"] {
+    background-color: var(--back);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, span, p,
+[class^="EditorialPlacement__"],
+.profile_identity-alternate_names,
+[data-lyrics-container="true"],
+*[class*='SongBioPreview'] a,
 div[class*='AuthenticationModal'] input,
 div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"],
 form[class^="CommentForm"] label div textarea::placeholder,
-fieldset [class^='FirehoseFilterSection']
-{
-    color: white !important;
-}
-#lyrics-root div[data-exclude-from-selection='true']:has(div[id*="div-gpt-ad"]), #lyrics-root div[data-exclude-from-selection='true']:has(div[id*="ads"]){
-    height: 0vh;
-}
-div[class*='ContributorSidebarSection'] svg{
-    fill: transparent !important;
-}
-div[class^="SquareSelect"],[class*="PageHeaderDropdownMenu-sc"],
-textarea[class^='TextInput'], div[class^="LineItemList__Container"],
-div[class^="LineItemList"] div > div[class^="LineItem__ItemRow"],
-div[class^="LineItemDetail__Container"],
- div[class^="DetailSection-shared"],
- a[class^="MiniCard__Link"].eIobYB,
- div[class^='FirehoseStream'] div div[role='button']{
-    background-color: var(--back) !important;
-
-}
- a[class^="MiniCard__Link"].eIobYB{
-   border: 0.5rem solid #05050575;
-   border-radius: 5px;
- }
-.inbox_line_item_detail {
-    background:var(--back) !important; 
-    padding: 0 1rem 1rem;
-    position: relative;
-}
-div[class^="SquareSelect"] a, 
+fieldset [class^='FirehoseFilterSection'],
+div[class^="SquareSelect"] a,
 [class*="PageHeaderDropdownMenu-sc"] a,
 [class*="PageHeaderDropdownMenu-sc"] button,
 div[class^="SquareSelect"] button,
@@ -101,50 +120,9 @@ div[class^='ContributorSidebar'] a[class^='StyledLink'],
 a[class^='ContributorSidebar'],
 div[class^='ContributorSidebarAlbum'] li[class^='AlbumTracklist'] div[class^='AlbumTracklist'],
 div[class^='SongComments'],
-textarea[class^='TextInput'],  *[class*='SongBioPreview'] a, a[href='#about'],
-div[class^="RecommendedSong__SongTitle"]
-{
-        color: white !important;
-    }
- .referent, [class*="feed_dropdown"],
- .feed_dropdown-expanded_section,
-  .contribution_opportunity-content,
-   .contribution_opportunity-actions,
-   div[class*="TagInput__"], div[class*='ScrollableTabs__'] input,
-   div[class*="css"] div[class*="TagInput__"] div[class*="css"],
-   div[class*="SelectInput__"],
-  div[class^=" css"][class$="-control"] div  div[class^=" css-"][class$="placeholder"],
-    div[class^=" css"][class$="-control"] div  div[class^=" css-"][class$="singleValue"]
-    {
-    background: var(--backCon) !important;
-    color: white !important;
- }
-div[class^="SquareManySelect"],
-div[class*="StickyContributorToolbar__Container-"]{
-    background-color: var(--back);
-    color: white;
-}
-div[class^="SquareButton"],
-a[class^="SquareButton"], 
-button[class^="square_button"], 
-div[class^="square_button"],
- div[class*="StickyContributorToolbar__Container-"] button,
- button[class*='SmallButton'],
- button[class^='Button'],
- div[class^='ContributorSidebar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'],
-   div[class*="css"] div[class*="TagInput__"] div[class*="css"],
-   div[class*="TagInput__"],
-   div[class*="SelectInput__"],
- button[class*="ScrollableTabs__TabButton"]
-    {
-      border-color: white;
-    color: white;
-}
-div[class^='QuestionFormControl'] button[class^='Button__Container'],
-div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container']{
-      border-color: black;
-    color: black;
-}
+textarea[class^='TextInput'],
+a[href='#about'],
+div[class^="RecommendedSong__SongTitle"],
 div[class*="CommunityRanking"],
 label[for="request_issue_type_select"],
 ol li a[href^="/hc"],
@@ -155,87 +133,38 @@ div[class^='LyricsEditExplainer'] a[class^='StyledLink'],
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div a,
 div[class^='SongInfo__Container'] div div[class^='SongInfo__Credit'] div span,
 div[class^="chart_row-metadata"],
-div[class^='LyricsPlaceholder'],blockquote,
+div[class^='LyricsPlaceholder'],
+blockquote,
 div[class^="profile_achievements"],
-div[role="combobox"] > div > div > div > div > div > input
-{
+div[role="combobox"] > div > div > div > div > div > input,
+div div[class^='Attribution__Author'],
+div[class^='ContributorsCredit'],
+div[class^='SongInfo__Label'],
+div[class^="toggleable_list_item"][class*="selected"],
+div:nth-child(1) > standard-rich-content > div > center > strong,
+label[class^="Field-shared"],
+div[class^="BaseAnnotation"] div[class^='RichText'] *,
+li div span[class^="InlineUserBadge__Name"],
+ol li[class^="ContributorList"] span[class="ContributorList__AttributionValue"],
+div[class^='SectionTitle__Title'],
+div[pseudo^="-webkit-input-placeholder"] {
     color: white !important;
 }
-div[class*="tooltip"],
- div[class*="full_width_button u-clickable"],
-  a[class*="full_width_link"],
- a[class="nesty-input"],
- select[id^="request_issue_type_select"],
-  a[class*="mini_card"],
-  div[class^='modal_window-content'],
-  div[class*='ScrollableTabs__'],
-  div[class*="RepeatableInputPair__"],
-  div[class^="css-"][class$="-menu"],
-  div[class^=" css"][class$="-menu"] div  div[class^=" css"],
-  div[class*='alert'],div[class*='user_notification'],
-  textarea[class*='TextInput'],
-  iq-notification-list div[class='iq_notification_list'] *[class*='iq_notification_list'],
-  div[class^='iq_notification-action'], div[class^='iq_notification_list']
- ,div[class^='iq_notification-message'] ,div[class^='iq_notification']
- div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] div
- ,div[class^='iq_notification_list'] div[class^='iq_notification_list'] div[class^='iq_notification'] div[class^='iq_notification-action'] div[class^='iq_notification'] div[class^='iq_notification-message'] span,
 
-  div[data-testid*="sticky-contributor-toolbar"],
-   div[class^="TooltipShadow"],
-    div[class^="MetadataChangesSection"],
-    div[class^="Referent__Fragment"], a[class^="Referent__Fragment"]
-  {
-     background-color: var(--back) !important;
-    color: white !important;
+iframe html body,
+a[class*="ChartItem"] div[class*="ChartItem"],
+label[id^="request_custom"],
+time {
+    color: white;
 }
-div[class^="dashed_background_message"]{
-    background-color: #ff00003d;
-}
-span[class*='Highlight']{
-    background-color: rgba(233, 233, 233, 0.307);
-}span[class*='PTO'],
-a[class*='ReferentFragment']:hover{
-    background-color: rgba(247, 244, 244, 0.6);
-}
-mini-article-card a{
-    background-color: transparent !important;
-}
- [class*="standalone"], 
- div.standalone_inbox,
- .profile_contribution,
- .white_container,
-  .statistics_panel,  
-  [class*="leaderboard-row"],
-  form[class*='conversation'],
-  div[class^='Alert'][class*='Container'][role='alert'],
-  div[class^='AnnotationEditHistory'],
-  div.activity_stream_event_unit,
- div[class*='fp'][class*='scope'],
- div[class^='grid_layout'], div[class*='article_info'],
- .render_404,
-body > div.header > iq-notification-list > div > div:nth-child(1) > div > div.iq_notification-message > span > em,
- body > div.header > iq-notification-list > div > div > div,
-body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em,
-body > div.header > iq-notification-list > div > div> div > div.iq_notification-message > span > em,
-div[class^="RecentActivity"]
-  {
-    background: var(--back) !important;
-    color: white !important;
- }
-.render_404-image{
-    filter: invert(93%);
-}
- .contribution_opportunity{
-     background: #000000 !important;
-    box-shadow: 0 2px 3px 0 #000000 !important;
- }
-span[class^='profile_identity-i'], 
-span[class^='header-action-label'], 
+
+span[class^='profile_identity-i'],
+span[class^='header-action-label'],
 button [class*='PageHeader'] span[class^='TextLabel'],
 [class*='PageHeaderMenu__Container'] span[class^='TextLabel'],
 span[class^='SongHeader'],
 span[class^='HeaderCredit'],
- a[class*="StyledLink"],
+a[class*="StyledLink"],
 a.referent-annotatable_title,
 span[class*='UnreviewedAnnotation__ExplainerToggle'],
 div[class^='About__Container'] h2,
@@ -255,70 +184,173 @@ div[class^='PageHeader'] div > a[href='/login'] > span,
 div[class^='PageHeader'] div > a[href='/signup'] > span,
 li[class^='ContributorList'] span,
 span[class^='SiteCommandPaletteItem'],
-button[class*='FirehoseFilters__ApplyButton']{
+button[class*='FirehoseFilters__ApplyButton'],
+a[class^="StyledLink"][class*="StickyNav"] span[class^="TextLabel"] {
     color: black !important;
 }
-.article_rich_text_formatting .g_list-item-content-body>a:not(:hover), .article_rich_text_formatting .g_list-item-header-title>a:not(:hover), .article_rich_text_formatting em>a:not(:hover), .article_rich_text_formatting h1>a:not(:hover), .article_rich_text_formatting h2>a:not(:hover), .article_rich_text_formatting h3>a:not(:hover), .article_rich_text_formatting h4>a:not(:hover), .article_rich_text_formatting h5>a:not(:hover), .article_rich_text_formatting h6>a:not(:hover), .article_rich_text_formatting li>a:not(:hover), .article_rich_text_formatting p>a:not(:hover), .article_rich_text_formatting small>a:not(:hover), .article_rich_text_formatting strong>a:not(:hover)
-,.article_reference_link{
-    background: none !important;
-    background-size: calc(100% - 1px) 1px;
-   text-shadow: none !important;
-   color: white !important;
-}
-.article_rich_text_formatting .g_list-item-content-body>a, .article_rich_text_formatting .g_list-item-header-title>a, .article_rich_text_formatting em>a, .article_rich_text_formatting h1>a, .article_rich_text_formatting h2>a, .article_rich_text_formatting h3>a, .article_rich_text_formatting h4>a, .article_rich_text_formatting h5>a, .article_rich_text_formatting h6>a, .article_rich_text_formatting li>a, .article_rich_text_formatting p>a, .article_rich_text_formatting small>a, .article_rich_text_formatting strong>a
-,.article_reference_link:hover
-{
-    color: grey !important;
-}
- *[class*='SongBioPreview'] a,
-div div[class^='Attribution__Author'],
-div[class^='ContributorsCredit'],
-div[class^='SongInfo__Label'],
-div[class^="toggleable_list_item"][class*="selected"],
-div:nth-child(1) > standard-rich-content > div > center > strong,
-label[class^="Field-shared"],
-div[class^="BaseAnnotation"] div[class^='RichText'] *
-{
-        color: white !important;
- }
- 
-div[class^="toggleable_list_item"]{
+
+div[class^="toggleable_list_item"] {
     color: grey;
 }
-a[class^="StyledLink"][class*="StickyNav"] span[class^="TextLabel"]{
-color: black !important;
-}
-span[class="profile_tabs-tab-count"]{
+
+span[class="profile_tabs-tab-count"] {
     color: #ff1464 !important;
 }
-[class^="EditorialPlacement__"]:hover h2,[class^="EditorialPlacement__"]:hover h3,
-[class^="EditorialPlacement__"]:hover h1,[class^="EditorialPlacement__"]:hover h4{
-    text-shadow: none !important;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255,255, 255)) !important;
-}
-div#featured-stories[class*='HomeContent'] div[class^='TopContent'][class*='Hero'] div[class^='EditorialPlacement'][class*='Header'] div[class^='EditorialPlacement']::after{
-  content: "";
-  border-bottom: 0.15rem solid #fff !important;
-  width: 100%;
-}
-div#featured-stories[class*='HomeContent'] div[class^='TopContent'][class*='Placement']::before{
-  content: "";
-  border-right: 0.15rem solid #fff !important;
-  height: 100%;
-}div#featured-stories[class*='HomeContent'] div[class^='TopContent'][class*='Placement']:last-child::before{
-  content: "";
-  border-right: 0rem solid #fff !important;
-  height: 0%;
-}
-div[class*='Latest'] * div[class^='EditorialPlacement__Label']::after{
-  content: "";
-  border-bottom: 0.15rem solid #fff !important;
+
+svg,
+div[class^='ContributorSidebsar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg,
+div[class^='ContributorsCredit'] span[class^='RoleIcon'] svg,
+div[class^="SocialLinks__Container"] a[class^="SocialLinks__"] svg path,
+div[class^='StubhubLink'] > svg > path,
+div[class^="LineItemList__Container"] * svg[class^="LineItemActionIcon__Icon"],
+div[class^="LineItemList"] div > div[class^="LineItem__ItemRow"] * svg,
+div[class^="LineItemDetail__Container"] * svg {
+    fill: white !important;
 }
 
-textarea:disabled{
-background-color: rgb(255, 255, 255) !important;
-color: rgb(0, 0, 0) !important;
+[class*="PageHeader"] svg,
+[class^="global_search-submit_button"] svg,
+a[class^='MetadataQuestionTemplate'] svg,
+div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] svg,
+div[class^='MetadataStats'] span div svg,
+a[href="#primary-album"] span[class^='InlineSvg'] svg,
+div[class^="SongNav__UpArrow-sc"] span svg,
+div[class^="SiteCommandPaletteItem"][class*="Icon"] svg {
+    fill: black !important;
 }
- li div span[class^="InlineUserBadge__Name"], ol li[class^="ContributorList"] span[class="ContributorList__AttributionValue"], div[class^='SectionTitle__Title'],div[pseudo^="-webkit-input-placeholder"]{
+
+div[class*='ContributorSidebarSection'] svg {
+    fill: transparent !important;
+}
+
+div[class^="PageGridCenter"] button[class^="SquareButton"][color="background.on"],
+li[class="blocks-item"],
+form[class^="CommentForm"] label div textarea {
+    border-color: white !important;
+}
+
+div[class^="SquareButton"],
+a[class^="SquareButton"],
+button[class^="square_button"],
+div[class^="square_button"],
+div[class*="StickyContributorToolbar__Container-"] button,
+button[class*='SmallButton'],
+button[class^='Button'],
+div[class^='ContributorSidebar__'] div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'],
+div[class*="css"] div[class*="TagInput__"] div[class*="css"],
+div[class*="TagInput__"],
+div[class*="SelectInput__"],
+button[class*="ScrollableTabs__TabButton"] {
+    border-color: white;
+    color: white;
+}
+
+div[class^='QuestionFormControl'] button[class^='Button__Container'],
+div[class^='ExpandableContent__ButtonContainer'] button[class^='Button__Container'] {
+    border-color: black;
+    color: black;
+}
+
+div[id*="div-gpt-ad"],
+div[id*="ads"],
+div[class*='smartfeed'] {
+    display: none !important;
+}
+
+#lyrics-root div[data-exclude-from-selection='true']:has(div[id*="div-gpt-ad"]),
+#lyrics-root div[data-exclude-from-selection='true']:has(div[id*="ads"]) {
+    height: 0vh;
+}
+
+div[class*='AuthenticationModal'],
+header[class="header"]:has(div.logo) {
     color: white !important;
- }
+    background-color: rgb(255, 255, 100);
+    background-image: linear-gradient(var(--backCon) 0%, var(--back) 39.9%);
+}
+
+a[class^="MiniCard__Link"].eIobYB {
+    border: 0.5rem solid #05050575;
+    border-radius: 5px;
+}
+
+.inbox_line_item_detail {
+    background-color: var(--back) !important;
+    padding: 0 1rem 1rem;
+    position: relative;
+}
+
+div[class^="dashed_background_message"] {
+    background-color: #ff00003d;
+}
+
+span[class*='Highlight'] {
+    background-color: rgba(233, 233, 233, 0.307);
+}
+
+span[class*='PTO'],
+a[class*='ReferentFragment']:hover {
+    background-color: rgba(247, 244, 244, 0.6);
+}
+
+mini-article-card a {
+    background-color: transparent !important;
+}
+
+.contribution_opportunity {
+    background-color: #000000 !important;
+    box-shadow: 0 2px 3px 0 #000000 !important;
+}
+
+.render_404-image {
+    filter: invert(93%);
+}
+
+textarea:disabled {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.article_rich_text_formatting :is(.g_list-item-content-body, .g_list-item-header-title, em, h1, h2, h3, h4, h5, h6, li, p, small, strong) > a:not(:hover),
+.article_reference_link {
+    background: none !important;
+    background-size: calc(100% - 1px) 1px;
+    text-shadow: none !important;
+    color: white !important;
+}
+
+.article_rich_text_formatting :is(.g_list-item-content-body, .g_list-item-header-title, em, h1, h2, h3, h4, h5, h6, li, p, small, strong) > a,
+.article_reference_link:hover {
+    color: grey !important;
+}
+
+[class^="EditorialPlacement__"]:hover h1,
+[class^="EditorialPlacement__"]:hover h2,
+[class^="EditorialPlacement__"]:hover h3,
+[class^="EditorialPlacement__"]:hover h4 {
+    text-shadow: none !important;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important;
+}
+
+div#featured-stories[class*='HomeContent'] div[class^='TopContent'][class*='Hero'] div[class^='EditorialPlacement'][class*='Header'] div[class^='EditorialPlacement']::after {
+    content: "";
+    border-bottom: 0.15rem solid #fff !important;
+    width: 100%;
+}
+
+div#featured-stories[class*='HomeContent'] div[class^='TopContent'][class*='Placement']::before {
+    content: "";
+    border-right: 0.15rem solid #fff !important;
+    height: 100%;
+}
+
+div#featured-stories[class*='HomeContent'] div[class^='TopContent'][class*='Placement']:last-child::before {
+    content: "";
+    border-right: 0rem solid #fff !important;
+    height: 0%;
+}
+
+div[class*='Latest'] * div[class^='EditorialPlacement__Label']::after {
+    content: "";
+    border-bottom: 0.15rem solid #fff !important;
+}
