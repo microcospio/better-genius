@@ -19,7 +19,7 @@ div[class^='FirehoseStream'] div div[role='button'] {
     background-color: var(--back) !important;
 }
 
-.fyuwSb {
+.fyuwSb, div[class^="SelectInput__Container"] div div[class$="control"] {
     background-color: black !important;
 }
 
@@ -153,7 +153,8 @@ div[class^='SectionTitle__Title'],
 div[pseudo^="-webkit-input-placeholder"],
 legend,
 div[class$="singleValue"],
-div[class$="control"] div[data-value]{
+div[class$="control"] div[data-value],
+ div[class^="SelectInput__Container"] div div[class$="control"] div div[class$="placeholder"]{
     color: white !important;
 }
 
