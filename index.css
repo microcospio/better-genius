@@ -91,7 +91,8 @@ div[class*='ScrollableTabs__'] input,
 div[class*="css"] div[class*="TagInput__"] div[class*="css"],
 div[class*="SelectInput__"],
 div[class^=" css"][class$="-control"] div div[class^=" css-"][class$="placeholder"],
-div[class^=" css"][class$="-control"] div div[class^=" css-"][class$="singleValue"] {
+div[class^=" css"][class$="-control"] div div[class^=" css-"][class$="singleValue"],
+div[class^="LyricsHighlightTooltip"] {
     background-color: var(--backCon) !important;
     color: white !important;
 }
@@ -154,7 +155,8 @@ div[pseudo^="-webkit-input-placeholder"],
 legend,
 div[class$="singleValue"],
 div[class$="control"] div[data-value],
- div[class^="SelectInput__Container"] div div[class$="control"] div div[class$="placeholder"]{
+ div[class^="SelectInput__Container"] div div[class$="control"] div div[class$="placeholder"],
+form[class^="ContributorSidebar"] div div div{
     color: white !important;
 }
 
@@ -195,7 +197,8 @@ button[class*='FirehoseFilters__ApplyButton'],
 a[class^="StyledLink"][class*="StickyNav"] span[class^="TextLabel"] {
     color: black !important;
 }
-
+/* for overlaying the above color black on certain tags
+*/
 div[class^="toggleable_list_item"] {
     color: grey;
 }
